@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
   # }
   
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
-  s.platform = :ios, '9.0'
+  
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLineSDK_official'
   
