@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RXSDK_Pure/RXSDK_Pure.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +31,14 @@ NS_ASSUME_NONNULL_BEGIN
  * 处理跳转
  */
 - (BOOL)handleOpenURL:(NSURL *)url;
+
+/**
+ * Line 分享，不返回分享结果
+ * @param content 分享描述
+ * @param url 分享链接
+ */
+- (void)shareWithContent:(NSString *)content
+                     url:(NSString *)url;
 
 @end
 
