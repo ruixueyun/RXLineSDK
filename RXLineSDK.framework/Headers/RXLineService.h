@@ -40,6 +40,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)shareWithContent:(NSString *)content
                      url:(NSString *)url;
 
+/**
+ * 同步信息
+ * 调用后会跳转到Line授权登录，但不会走登录回调，同步信息通过此接口回调
+ */
+- (void)syncInfoWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
 @end
 
 NS_ASSUME_NONNULL_END
