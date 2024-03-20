@@ -41,6 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
                      url:(NSString *)url;
 
 /**
+ * 检测line是否安装
+ */
+- (BOOL)checkLineIsInstall;
+
+/**
  * 同步信息
  * 调用后会跳转到Line授权登录，但不会走登录回调，同步信息通过此接口回调
  */
