@@ -33,12 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)handleOpenURL:(NSURL *)url;
 
 /**
- * Line 分享，不返回分享结果
+ * Line 分享
  * @param content 分享描述
  * @param url 分享链接
  */
 - (void)shareWithContent:(NSString *)content
-                     url:(NSString *)url;
+                     url:(NSString *)url
+                complete:(RequestComplete)complete;
 
 /**
  * 检测line是否安装
